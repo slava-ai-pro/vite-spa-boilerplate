@@ -1,5 +1,5 @@
 /* ========================================
-   PREMIUM ANIMATIONS & ENHANCEMENTS
+   OUTFORM-INSPIRED ANIMATIONS & EFFECTS
 ======================================== */
 
 .app {
@@ -8,51 +8,49 @@
 
 /* Smooth scroll offset for fixed nav */
 section[id] {
-  scroll-margin-top: 52px;
+  scroll-margin-top: 72px;
 }
 
 /* ========================================
-   PITCH BADGE - Premium Glass Style
+   PITCH BADGE - Minimal Border Style
 ======================================== */
 .pitch-badge {
   display: inline-block;
-  padding: 10px 24px;
-  background: rgba(0, 113, 227, 0.15);
-  border: 1px solid rgba(0, 113, 227, 0.3);
-  border-radius: 24px;
-  font-size: 13px;
-  font-weight: 500;
+  padding: 12px 28px;
+  background: transparent;
+  border: 1px solid rgba(122, 0, 223, 0.5);
+  font-size: 11px;
+  font-weight: 600;
   color: var(--color-primary);
-  margin-bottom: 28px;
-  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  backdrop-filter: blur(10px);
   transition: all var(--transition-smooth);
 }
 
 .pitch-badge:hover {
-  background: rgba(0, 113, 227, 0.25);
-  transform: translateY(-2px);
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  border-color: var(--color-primary);
 }
 
 .pitch-badge--dark {
-  background: rgba(0, 113, 227, 0.1);
-  color: var(--color-primary);
+  border-color: rgba(122, 0, 223, 0.4);
 }
 
 /* TV Content Pitch Label */
 .tv-content-pitch {
   display: block;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 12px;
-  letter-spacing: 0.15em;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 16px;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
 }
 
 /* ========================================
-   LED GRID EFFECT - Enhanced
+   LED GRID EFFECT - Cyber Grid
 ======================================== */
 .led-grid {
   position: absolute;
@@ -61,78 +59,75 @@ section[id] {
   right: 0;
   bottom: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 24px 24px;
+    linear-gradient(rgba(122, 0, 223, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122, 0, 223, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
   pointer-events: none;
-  opacity: 0.5;
 }
 
 /* ========================================
    TV DISPLAY SIZES
 ======================================== */
 .tv-display--massive {
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .tv-display--large {
-  max-width: 850px;
+  max-width: 950px;
 }
 
 .tv-display--small {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 /* TV Stand Wide */
 .tv-stand--wide {
-  width: 320px;
+  width: 350px;
 }
 
 /* ========================================
    TV DISPLAY ANIMATIONS
 ======================================== */
 .tv-display {
-  animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: fadeInScale 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInScale {
   from {
     opacity: 0;
-    transform: translateY(40px) scale(0.98);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: scale(1);
   }
 }
 
-/* Screen ambient glow effect */
+/* Ambient glow effect */
 .tv-display::after {
   content: '';
   position: absolute;
-  bottom: -60px;
-  left: 5%;
-  right: 5%;
-  height: 60px;
-  background: radial-gradient(ellipse at center, rgba(0, 113, 227, 0.25) 0%, transparent 70%);
-  filter: blur(30px);
+  bottom: -80px;
+  left: 10%;
+  right: 10%;
+  height: 80px;
+  background: radial-gradient(ellipse at center, rgba(122, 0, 223, 0.3) 0%, transparent 70%);
+  filter: blur(40px);
   pointer-events: none;
 }
 
-/* Premium gradient animation on TV display */
-@keyframes gradientShift {
+/* Gradient animation on TV display */
+@keyframes gradientPulse {
   0%, 100% {
-    background-position: 0% 50%;
+    opacity: 1;
   }
   50% {
-    background-position: 100% 50%;
+    opacity: 0.8;
   }
 }
 
 .tv-display {
-  background: linear-gradient(-45deg, #0a0a15, #16213e, #0f3460, #1a1a2e, #0a0a15);
-  background-size: 400% 400%;
-  animation: gradientShift 20s ease infinite, fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: fadeInScale 1s cubic-bezier(0.16, 1, 0.3, 1), gradientPulse 8s ease-in-out infinite;
 }
 
 /* ========================================
@@ -150,8 +145,8 @@ section[id] {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-  transition: left 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
 }
 
 .btn:hover::before {
@@ -166,20 +161,11 @@ section[id] {
 }
 
 .feature-card:hover {
-  transform: translateY(-12px);
-  box-shadow:
-    0 40px 80px -20px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(255, 255, 255, 0.08);
-}
-
-.feature-card--light:hover {
-  box-shadow:
-    0 40px 80px -20px rgba(0, 0, 0, 0.15),
-    0 0 0 1px rgba(0, 0, 0, 0.05);
+  transform: translateY(-8px);
 }
 
 /* ========================================
-   LED MODULE VISUAL
+   LED MODULE VISUAL - Cyber Style
 ======================================== */
 .led-module-visual {
   width: 100%;
@@ -192,39 +178,39 @@ section[id] {
 .module-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 24px;
+  gap: 12px;
+  padding: 28px;
 }
 
 .module-cell {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #00a8ff 100%);
-  border-radius: 6px;
-  animation: ledPulse 2.5s ease-in-out infinite;
-  box-shadow: 0 0 20px rgba(0, 113, 227, 0.3);
+  width: 48px;
+  height: 48px;
+  background: var(--gradient-vivid);
+  border-radius: 2px;
+  animation: cellPulse 3s ease-in-out infinite;
+  box-shadow: 0 0 30px rgba(122, 0, 223, 0.4);
 }
 
-.module-cell:nth-child(2) { animation-delay: 0.3s; }
-.module-cell:nth-child(3) { animation-delay: 0.6s; }
-.module-cell:nth-child(4) { animation-delay: 0.9s; }
-.module-cell:nth-child(5) { animation-delay: 0.2s; }
-.module-cell:nth-child(6) { animation-delay: 0.5s; }
-.module-cell:nth-child(7) { animation-delay: 0.8s; }
-.module-cell:nth-child(8) { animation-delay: 1.1s; }
-.module-cell:nth-child(9) { animation-delay: 0.4s; }
-.module-cell:nth-child(10) { animation-delay: 0.7s; }
-.module-cell:nth-child(11) { animation-delay: 1.0s; }
-.module-cell:nth-child(12) { animation-delay: 1.3s; }
+.module-cell:nth-child(2) { animation-delay: 0.2s; }
+.module-cell:nth-child(3) { animation-delay: 0.4s; }
+.module-cell:nth-child(4) { animation-delay: 0.6s; }
+.module-cell:nth-child(5) { animation-delay: 0.1s; }
+.module-cell:nth-child(6) { animation-delay: 0.3s; }
+.module-cell:nth-child(7) { animation-delay: 0.5s; }
+.module-cell:nth-child(8) { animation-delay: 0.7s; }
+.module-cell:nth-child(9) { animation-delay: 0.25s; }
+.module-cell:nth-child(10) { animation-delay: 0.45s; }
+.module-cell:nth-child(11) { animation-delay: 0.65s; }
+.module-cell:nth-child(12) { animation-delay: 0.85s; }
 .module-cell:nth-child(13) { animation-delay: 0.15s; }
-.module-cell:nth-child(14) { animation-delay: 0.45s; }
-.module-cell:nth-child(15) { animation-delay: 0.75s; }
-.module-cell:nth-child(16) { animation-delay: 1.05s; }
+.module-cell:nth-child(14) { animation-delay: 0.35s; }
+.module-cell:nth-child(15) { animation-delay: 0.55s; }
+.module-cell:nth-child(16) { animation-delay: 0.75s; }
 
-@keyframes ledPulse {
+@keyframes cellPulse {
   0%, 100% {
-    opacity: 0.4;
-    transform: scale(0.95);
+    opacity: 0.3;
+    transform: scale(0.9);
   }
   50% {
     opacity: 1;
@@ -243,26 +229,27 @@ section[id] {
 
 .pitch-demo {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .pitch-demo span {
-  padding: 14px 20px;
-  background: linear-gradient(135deg, rgba(0, 113, 227, 0.3) 0%, rgba(0, 168, 255, 0.2) 100%);
-  border: 1px solid rgba(0, 113, 227, 0.3);
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 600;
+  padding: 16px 24px;
+  background: transparent;
+  border: 1px solid rgba(122, 0, 223, 0.4);
+  font-size: 14px;
+  font-weight: 700;
   color: #fff;
-  backdrop-filter: blur(10px);
+  letter-spacing: 0.1em;
   transition: all var(--transition-smooth);
 }
 
 .pitch-demo span:hover {
-  background: linear-gradient(135deg, rgba(0, 113, 227, 0.5) 0%, rgba(0, 168, 255, 0.4) 100%);
+  background: var(--gradient-vivid);
+  border-color: transparent;
   transform: translateY(-4px);
+  box-shadow: var(--shadow-glow-purple);
 }
 
 /* ========================================
@@ -271,29 +258,26 @@ section[id] {
 .seamless-demo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3px;
-  padding: 36px;
+  gap: 4px;
+  padding: 40px;
 }
 
 .seam-module {
-  width: 90px;
-  height: 56px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  border-radius: 4px;
+  width: 100px;
+  height: 60px;
+  background: linear-gradient(135deg, #1a0a2e 0%, #0a1a2e 100%);
+  border-radius: 2px;
   transition: all var(--transition-smooth);
   position: relative;
+  border: 1px solid rgba(122, 0, 223, 0.2);
 }
 
 .seam-module::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-  border-radius: 4px;
-}
-
-.seamless-demo:hover .seam-module {
-  gap: 0;
+  background: linear-gradient(135deg, rgba(122, 0, 223, 0.1) 0%, transparent 50%);
+  border-radius: 2px;
 }
 
 /* ========================================
@@ -301,15 +285,15 @@ section[id] {
 ======================================== */
 .hdr-demo {
   width: 100%;
-  padding: 44px;
+  padding: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hdr-bar {
-  width: 220px;
-  height: 36px;
+  width: 240px;
+  height: 40px;
   background: linear-gradient(90deg,
     #000 0%,
     #1a1a1a 15%,
@@ -320,24 +304,9 @@ section[id] {
     #fff 90%,
     #fff 100%
   );
-  border-radius: 6px;
+  border-radius: 2px;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.hdr-bar::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-  border-radius: 6px;
-}
-
-/* ========================================
-   NAVIGATION ENHANCEMENTS
-======================================== */
-.nav {
-  transition: all var(--transition-smooth);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* ========================================
@@ -348,17 +317,16 @@ section[id] {
 }
 
 .spec-item:hover {
-  transform: scale(1.03);
+  transform: translateY(-4px);
 }
 
 /* ========================================
-   PITCH GUIDE - Premium Card
+   PITCH GUIDE - Bold Minimal
 ======================================== */
 .pitch-guide {
   margin-top: 100px;
-  padding: 70px;
-  background: linear-gradient(135deg, #fafafa 0%, #f5f5f7 100%);
-  border-radius: 28px;
+  padding: 80px;
+  background: var(--color-bg-white);
   border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
 }
@@ -369,54 +337,58 @@ section[id] {
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(201, 169, 98, 0.3), transparent);
+  height: 2px;
+  background: var(--gradient-vivid);
 }
 
 .pitch-guide-title {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
   text-align: center;
-  margin-bottom: 50px;
-  color: var(--color-text-dark);
+  margin-bottom: 60px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+  text-stroke: 1px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
   letter-spacing: -0.02em;
 }
 
 .pitch-guide-grid {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 32px;
 }
 
 .pitch-guide-item {
   flex: 1;
   text-align: center;
-  padding: 32px 24px;
-  background: var(--color-bg-white);
-  border-radius: 20px;
+  padding: 40px 24px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   transition: all var(--transition-smooth);
-  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .pitch-guide-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow-purple);
 }
 
 .pitch-guide-value {
-  font-size: 40px;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #00a8ff 100%);
+  font-size: 44px;
+  font-weight: 800;
+  background: var(--gradient-vivid);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .pitch-guide-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--color-text-muted);
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
 }
 
 /* ========================================
@@ -433,7 +405,7 @@ section[id] {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--color-primary);
+  background: var(--gradient-vivid);
   transition: width var(--transition-smooth);
 }
 
@@ -442,76 +414,34 @@ section[id] {
 }
 
 /* ========================================
-   PREMIUM TITLE EFFECTS
-======================================== */
-.section-title {
-  position: relative;
-}
-
-.section--dark .section-title {
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.7) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.section--light .section-title,
-.section--white .section-title {
-  background: linear-gradient(180deg, #1d1d1f 0%, #3d3d40 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* ========================================
-   TV STAND REFLECTION
-======================================== */
-.tv-stand {
-  position: relative;
-}
-
-.tv-stand::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
-  height: 12px;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, transparent 70%);
-  filter: blur(6px);
-}
-
-/* ========================================
-   GALLERY SECTION
+   GALLERY SECTION - Outform Style
 ======================================== */
 .gallery-section {
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
   max-width: 1400px;
-  margin: 60px auto 0;
-  padding: 0 40px;
+  margin: 80px auto 0;
+  padding: 0 var(--spacing-lg);
 }
 
 .gallery-item {
   position: relative;
-  border-radius: 20px;
   overflow: hidden;
   aspect-ratio: 4/3;
   cursor: pointer;
   transition: all var(--transition-elegant);
-  background: #0a0a0f;
+  background: #0a0a0a;
 }
 
 .gallery-item:hover {
-  transform: translateY(-12px) scale(1.02);
+  transform: translateY(-12px);
   box-shadow:
-    0 40px 80px -20px rgba(0, 0, 0, 0.6),
+    0 60px 100px -30px rgba(122, 0, 223, 0.3),
     0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
@@ -527,10 +457,12 @@ section[id] {
   height: 100%;
   object-fit: cover;
   transition: all var(--transition-elegant);
+  filter: grayscale(20%);
 }
 
 .gallery-item:hover .gallery-image {
-  transform: scale(1.08);
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 /* Gallery Info Overlay */
@@ -539,13 +471,13 @@ section[id] {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 36px;
+  padding: 40px;
   background: linear-gradient(to top,
     rgba(0, 0, 0, 0.95) 0%,
-    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.7) 60%,
     transparent 100%
   );
-  transform: translateY(24px);
+  transform: translateY(30px);
   opacity: 0;
   transition: all var(--transition-smooth);
 }
@@ -557,40 +489,41 @@ section[id] {
 
 .gallery-tag {
   display: inline-block;
-  padding: 6px 14px;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #0066cc 100%);
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border-radius: 6px;
-  margin-bottom: 14px;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
 }
 
 .gallery-title {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 700;
   color: #fff;
-  margin-bottom: 8px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .gallery-desc {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   margin: 0;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
 }
 
 /* Featured item larger text */
 .gallery-item--featured .gallery-info {
-  padding: 48px;
+  padding: 56px;
 }
 
 .gallery-item--featured .gallery-title {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .gallery-item--featured .gallery-desc {
@@ -598,10 +531,29 @@ section[id] {
 }
 
 /* ========================================
+   SCROLL REVEAL ANIMATIONS
+======================================== */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-content {
+  animation: revealUp 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ========================================
    REDUCED MOTION
 ======================================== */
 @media (prefers-reduced-motion: reduce) {
-  .tv-display {
+  .tv-display,
+  .section-content {
     animation: none;
   }
 
@@ -642,7 +594,7 @@ section[id] {
 @media (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 20px;
+    padding: 0 var(--spacing-md);
   }
 
   .gallery-item--featured {
@@ -656,15 +608,15 @@ section[id] {
   }
 
   .pitch-guide-item {
-    flex: 1 1 calc(33% - 24px);
-    min-width: 160px;
+    flex: 1 1 calc(33% - 32px);
+    min-width: 180px;
   }
 }
 
 @media (max-width: 768px) {
   .gallery-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 20px;
   }
 
   .gallery-item--featured {
@@ -676,11 +628,11 @@ section[id] {
   .gallery-info {
     transform: translateY(0);
     opacity: 1;
-    padding: 24px;
+    padding: 28px;
   }
 
   .gallery-title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .gallery-desc {
@@ -688,38 +640,38 @@ section[id] {
   }
 
   .gallery-item--featured .gallery-info {
-    padding: 28px;
+    padding: 32px;
   }
 
   .gallery-item--featured .gallery-title {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .pitch-guide {
-    padding: 48px 24px;
+    padding: 60px 28px;
   }
 
   .pitch-guide-title {
-    font-size: 28px;
+    margin-bottom: 48px;
   }
 
   .pitch-guide-item {
-    flex: 1 1 calc(50% - 24px);
+    flex: 1 1 calc(50% - 32px);
   }
 
   .pitch-guide-value {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
 @media (max-width: 480px) {
   .pitch-badge {
-    font-size: 11px;
-    padding: 8px 18px;
+    font-size: 10px;
+    padding: 10px 20px;
   }
 
   .tv-content-pitch {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .pitch-guide-item {
