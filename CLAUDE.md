@@ -49,3 +49,7 @@ Uses ESLint v9 flat config format with:
 - React 19.2.0 / React DOM 19.2.0
 - Vite 7.2.4 with @vitejs/plugin-react
 - TypeScript ~5.9.3
+
+## Workflow Rules
+
+- **Commit and push after each code change** - Every code modification must be committed and pushed to the remote repository immediately after completion.
