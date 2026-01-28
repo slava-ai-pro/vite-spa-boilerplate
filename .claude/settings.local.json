@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nstyle: Upgrade design with premium aesthetics and enhanced animations\n\n- Add premium color palette with gold accents and refined gradients\n- Implement CSS custom properties for consistent transitions\n- Add subtle ambient glow effects on TV displays\n- Enhance button hover states with shimmer animations\n- Improve feature card hover effects with smooth elevation\n- Add staggered LED pulse animations on module grid\n- Refine glassmorphism effects on badges and overlays\n- Enhance gallery hover interactions with scale and lift\n- Add premium gradient text effects on section titles\n- Improve pitch guide cards with lift hover states\n- Add decorative gold accent lines on feature cards\n- Refine responsive breakpoints for better mobile experience\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout:*)",
+      "WebFetch(domain:www.outform.com)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nstyle: Add Outform-inspired bold minimalist design\n\n- Add Inter font for modern geometric typography\n- Implement outlined text-stroke effect on headlines\n- Add vivid purple/cyan gradient accents \\(#7a00df, #00d4ff\\)\n- Update color palette with cyber-inspired tones\n- Add gradient mesh backgrounds on dark sections\n- Implement minimal border-style badges and buttons\n- Add purple glow effects on hover states\n- Update gallery with grayscale filter and scale animations\n- Refine spacing with larger, bolder proportions\n- Add reveal-up animations on section content\n- Update footer with dark theme\n- Add gradient underlines on navigation and footer links\n- Implement sharp-cornered geometric aesthetic\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git revert:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nrevert: Remove Outform-inspired design, restore premium aesthetics version\n\nReverting to the previous design with Apple-style premium aesthetics,\ngold accents, and softer visual approach.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
