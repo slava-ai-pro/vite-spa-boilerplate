@@ -12,42 +12,45 @@ section[id] {
 }
 
 /* ========================================
-   PITCH BADGE - Premium Glass Style
+   PITCH BADGE - Ultra Premium Glass Style
 ======================================== */
 .pitch-badge {
   display: inline-block;
-  padding: 10px 24px;
-  background: rgba(0, 113, 227, 0.15);
-  border: 1px solid rgba(0, 113, 227, 0.3);
-  border-radius: 24px;
-  font-size: 13px;
-  font-weight: 500;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, rgba(10, 132, 255, 0.12) 0%, rgba(10, 132, 255, 0.08) 100%);
+  border: 1px solid rgba(10, 132, 255, 0.25);
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
   color: var(--color-primary);
-  margin-bottom: 28px;
-  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   transition: all var(--transition-smooth);
+  box-shadow: 0 4px 20px rgba(10, 132, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .pitch-badge:hover {
-  background: rgba(0, 113, 227, 0.25);
+  background: linear-gradient(135deg, rgba(10, 132, 255, 0.2) 0%, rgba(10, 132, 255, 0.12) 100%);
   transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(10, 132, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .pitch-badge--dark {
-  background: rgba(0, 113, 227, 0.1);
+  background: linear-gradient(135deg, rgba(10, 132, 255, 0.08) 0%, rgba(10, 132, 255, 0.04) 100%);
   color: var(--color-primary);
+  border-color: rgba(10, 132, 255, 0.2);
 }
 
 /* TV Content Pitch Label */
 .tv-content-pitch {
   display: block;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 12px;
-  letter-spacing: 0.15em;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 16px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -352,71 +355,77 @@ section[id] {
 }
 
 /* ========================================
-   PITCH GUIDE - Premium Card
+   PITCH GUIDE - Ultra Premium Card
 ======================================== */
 .pitch-guide {
   margin-top: 100px;
-  padding: 70px;
-  background: linear-gradient(135deg, #fafafa 0%, #f5f5f7 100%);
-  border-radius: 28px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 80px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8fa 100%);
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
   position: relative;
+  box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.08);
 }
 
 .pitch-guide::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 10%;
+  right: 10%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(201, 169, 98, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent);
 }
 
 .pitch-guide-title {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
   color: var(--color-text-dark);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .pitch-guide-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .pitch-guide-item {
   flex: 1;
+  max-width: 200px;
   text-align: center;
-  padding: 32px 24px;
+  padding: 36px 28px;
   background: var(--color-bg-white);
-  border-radius: 20px;
-  transition: all var(--transition-smooth);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  transition: all var(--transition-elegant);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 .pitch-guide-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.12);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.15);
+  border-color: rgba(10, 132, 255, 0.1);
 }
 
 .pitch-guide-value {
-  font-size: 40px;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #00a8ff 100%);
+  font-size: 44px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0066d6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
 }
 
 .pitch-guide-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--color-text-muted);
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
 /* ========================================
@@ -557,15 +566,17 @@ section[id] {
 
 .gallery-tag {
   display: inline-block;
-  padding: 6px 14px;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #0066cc 100%);
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgba(10, 132, 255, 0.9) 0%, rgba(0, 102, 204, 0.9) 100%);
   color: #fff;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border-radius: 6px;
-  margin-bottom: 14px;
+  letter-spacing: 0.15em;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(10, 132, 255, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .gallery-title {

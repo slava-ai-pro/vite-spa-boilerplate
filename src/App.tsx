@@ -23,11 +23,11 @@ function App() {
       {/* Hero Section - Large Residential Outdoor */}
       <section id="flagship" className="section section--dark">
         <div className="section-content">
-          <h1 className="section-title">Outdoor Home Displays</h1>
-          <p className="section-subtitle">Premium outdoor LED screens for private residences.<br />Built for backyards, patios & pool areas.</p>
-          <div className="pitch-badge">115" - 248" Residential Series</div>
+          <h1 className="section-title">Outdoor Home Cinema</h1>
+          <p className="section-subtitle">Ultra-premium LED displays for discerning homeowners.<br />Engineered for luxury outdoor living.</p>
+          <div className="pitch-badge">P2.6 - P3.9 Premium Series</div>
           <div className="btn-group">
-            <a href="#contact" className="btn btn-primary">Get a quote</a>
+            <a href="#contact" className="btn btn-primary">Request consultation</a>
             <a href="#specs" className="btn btn-secondary">View specs</a>
           </div>
           <div className="tv-display tv-display--massive">
@@ -35,7 +35,7 @@ function App() {
             <div className="tv-content">
               <span className="tv-content-size">248</span>
               <span className="tv-content-unit">inch</span>
-              <span className="tv-content-pitch">P1.9 Premium LED</span>
+              <span className="tv-content-pitch">P2.6 Ultra HD LED</span>
             </div>
           </div>
           <div className="tv-stand tv-stand--wide"></div>
@@ -47,7 +47,7 @@ function App() {
         <div className="section-content">
           <h1 className="section-title">Pool & Patio</h1>
           <p className="section-subtitle">Weatherproof entertainment for outdoor living.<br />Perfect for poolside movie nights.</p>
-          <div className="pitch-badge pitch-badge--dark">165" - 220" Entertainment Series</div>
+          <div className="pitch-badge pitch-badge--dark">P2.9 Entertainment Series</div>
           <div className="btn-group">
             <a href="#contact" className="btn btn-primary">Learn more</a>
           </div>
@@ -56,7 +56,7 @@ function App() {
             <div className="tv-content">
               <span className="tv-content-size">190</span>
               <span className="tv-content-unit">inch</span>
-              <span className="tv-content-pitch">P2.5 Outdoor LED</span>
+              <span className="tv-content-pitch">P2.9 Outdoor LED</span>
             </div>
           </div>
           <div className="tv-stand tv-stand--wide"></div>
@@ -68,7 +68,7 @@ function App() {
         <div className="section-content">
           <h1 className="section-title">Garden & Terrace</h1>
           <p className="section-subtitle">Transform your outdoor space into a cinema.<br />Elegant designs that blend with landscaping.</p>
-          <div className="pitch-badge pitch-badge--dark">138" - 165" Garden Series</div>
+          <div className="pitch-badge pitch-badge--dark">P3.1 Garden Series</div>
           <div className="btn-group">
             <a href="#contact" className="btn btn-primary">Learn more</a>
           </div>
@@ -77,7 +77,7 @@ function App() {
             <div className="tv-content">
               <span className="tv-content-size">150</span>
               <span className="tv-content-unit">inch</span>
-              <span className="tv-content-pitch">P2.0 Garden LED</span>
+              <span className="tv-content-pitch">P3.1 Garden LED</span>
             </div>
           </div>
           <div className="tv-stand"></div>
@@ -89,7 +89,7 @@ function App() {
         <div className="section-content">
           <h1 className="section-title">Compact Outdoor</h1>
           <p className="section-subtitle">Perfect for covered patios & pergolas.<br />Ideal viewing from 8-15 feet.</p>
-          <div className="pitch-badge">115" - 138" Compact Series</div>
+          <div className="pitch-badge">P3.9 Compact Series</div>
           <div className="btn-group">
             <a href="#contact" className="btn btn-primary">Learn more</a>
           </div>
@@ -98,7 +98,7 @@ function App() {
             <div className="tv-content">
               <span className="tv-content-size">115</span>
               <span className="tv-content-unit">inch</span>
-              <span className="tv-content-pitch">P1.5 Compact LED</span>
+              <span className="tv-content-pitch">P3.9 Compact LED</span>
             </div>
           </div>
           <div className="tv-stand"></div>
@@ -106,14 +106,15 @@ function App() {
       </section>
 
       {/* Technology Grid Section */}
-      <section id="technology" className="section section--light" style={{ minHeight: 'auto', padding: '60px 20px' }}>
+      <section id="technology" className="section section--light" style={{ minHeight: 'auto', padding: '80px 20px' }}>
         <div className="section-content">
-          <h2 className="section-title" style={{ marginBottom: '40px' }}>Residential LED Technology</h2>
+          <h2 className="section-title" style={{ marginBottom: '16px' }}>Premium LED Technology</h2>
+          <p className="section-subtitle" style={{ marginBottom: '50px' }}>Engineered for the outdoor environment.</p>
         </div>
         <div className="features-grid">
           <div className="feature-card">
-            <h3 className="feature-card-title">Fine Pixel Pitch</h3>
-            <p className="feature-card-subtitle">P1.5 to P2.5mm for crisp images.<br />Perfect for close viewing distances.</p>
+            <h3 className="feature-card-title">P2.6 - P3.9 Pixel Pitch</h3>
+            <p className="feature-card-subtitle">Optimal resolution for outdoor viewing.<br />Crystal clear from 10-25 feet.</p>
             <a href="#" className="btn btn-primary">Learn more</a>
             <div className="feature-visual">
               <div className="led-module-visual">
@@ -124,15 +125,15 @@ function App() {
             </div>
           </div>
           <div className="feature-card">
-            <h3 className="feature-card-title">Screen Sizes</h3>
-            <p className="feature-card-subtitle">From 115" to 248" diagonal.<br />Perfect for any backyard.</p>
+            <h3 className="feature-card-title">115" to 248" Displays</h3>
+            <p className="feature-card-subtitle">Cinema-scale screens for your home.<br />Custom sizes available.</p>
             <a href="#" className="btn btn-primary">Learn more</a>
             <div className="feature-visual pitch-visual">
               <div className="pitch-demo">
-                <span>115"</span>
-                <span>150"</span>
-                <span>190"</span>
-                <span>248"</span>
+                <span>P2.6</span>
+                <span>P2.9</span>
+                <span>P3.1</span>
+                <span>P3.9</span>
               </div>
             </div>
           </div>
@@ -166,126 +167,126 @@ function App() {
       <section id="gallery" className="section section--dark gallery-section">
         <div className="section-content">
           <h2 className="section-title">Featured Installations</h2>
-          <p className="section-subtitle">Luxury outdoor displays in private residences.</p>
+          <p className="section-subtitle">Premium outdoor displays in private residences.</p>
         </div>
         <div className="gallery-grid">
           {/* Row 1 */}
           <div className="gallery-item gallery-item--featured">
             <img
-              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=800&fit=crop&q=80"
-              alt="Luxury backyard with pool"
+              src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=1200&h=800&fit=crop&q=80"
+              alt="Outdoor cinema by the pool"
               className="gallery-image"
             />
             <div className="gallery-info">
-              <span className="gallery-tag">Poolside</span>
+              <span className="gallery-tag">Poolside Cinema</span>
               <h3 className="gallery-title">Beverly Hills Estate</h3>
-              <p className="gallery-desc">248" P1.9 Poolside Cinema</p>
+              <p className="gallery-desc">248" P2.6 Poolside Installation</p>
             </div>
           </div>
 
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&q=80"
-              alt="Modern patio area"
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&q=80"
+              alt="Luxury outdoor theater"
               className="gallery-image"
             />
             <div className="gallery-info">
-              <span className="gallery-tag">Patio</span>
+              <span className="gallery-tag">Outdoor Theater</span>
               <h3 className="gallery-title">Miami Beach Villa</h3>
-              <p className="gallery-desc">190" P2.0 Covered Patio</p>
+              <p className="gallery-desc">190" P2.9 Covered Patio</p>
             </div>
           </div>
 
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80"
-              alt="Luxury backyard"
+              src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=600&fit=crop&q=80"
+              alt="Cinema screen setup"
               className="gallery-image"
             />
             <div className="gallery-info">
-              <span className="gallery-tag">Garden</span>
+              <span className="gallery-tag">Home Cinema</span>
               <h3 className="gallery-title">Hamptons Residence</h3>
-              <p className="gallery-desc">165" P2.5 Garden Theater</p>
+              <p className="gallery-desc">165" P3.1 Garden Theater</p>
             </div>
           </div>
 
           {/* Row 2 */}
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop&q=80"
-              alt="Outdoor entertainment area"
+              src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=600&fit=crop&q=80"
+              alt="Large display screen"
               className="gallery-image"
             />
             <div className="gallery-info">
               <span className="gallery-tag">Terrace</span>
               <h3 className="gallery-title">Malibu Oceanfront</h3>
-              <p className="gallery-desc">220" P1.9 Rooftop Terrace</p>
+              <p className="gallery-desc">220" P2.6 Rooftop Terrace</p>
             </div>
           </div>
 
           <div className="gallery-item gallery-item--featured">
             <img
-              src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&h=800&fit=crop&q=80"
-              alt="Modern outdoor living"
+              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=800&fit=crop&q=80"
+              alt="Professional display installation"
               className="gallery-image"
             />
             <div className="gallery-info">
               <span className="gallery-tag">Outdoor Living</span>
               <h3 className="gallery-title">Scottsdale Ranch</h3>
-              <p className="gallery-desc">240" P2.0 Outdoor Living Room</p>
+              <p className="gallery-desc">240" P2.9 Outdoor Living Room</p>
             </div>
           </div>
 
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&h=600&fit=crop&q=80"
-              alt="Pool house"
+              src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=600&fit=crop&q=80"
+              alt="Movie screen outdoors"
               className="gallery-image"
             />
             <div className="gallery-info">
               <span className="gallery-tag">Pool House</span>
               <h3 className="gallery-title">Palm Beach Estate</h3>
-              <p className="gallery-desc">150" P1.5 Pool Cabana</p>
+              <p className="gallery-desc">150" P3.1 Pool Cabana</p>
             </div>
           </div>
 
           {/* Row 3 */}
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop&q=80"
-              alt="Covered outdoor space"
+              src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=800&h=600&fit=crop&q=80"
+              alt="Outdoor entertainment display"
               className="gallery-image"
             />
             <div className="gallery-info">
               <span className="gallery-tag">Pergola</span>
               <h3 className="gallery-title">Napa Valley Vineyard</h3>
-              <p className="gallery-desc">138" P2.0 Pergola Display</p>
+              <p className="gallery-desc">138" P3.1 Pergola Display</p>
             </div>
           </div>
 
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&h=600&fit=crop&q=80"
-              alt="Luxury backyard setup"
+              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop&q=80"
+              alt="Premium outdoor screen"
               className="gallery-image"
             />
             <div className="gallery-info">
               <span className="gallery-tag">Backyard</span>
               <h3 className="gallery-title">Aspen Mountain Home</h3>
-              <p className="gallery-desc">175" P2.5 Alpine Theater</p>
+              <p className="gallery-desc">175" P2.9 Alpine Theater</p>
             </div>
           </div>
 
           <div className="gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop&q=80"
-              alt="Compact outdoor screen"
+              src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=800&h=600&fit=crop&q=80"
+              alt="Compact LED display"
               className="gallery-image"
             />
             <div className="gallery-info">
               <span className="gallery-tag">Compact</span>
               <h3 className="gallery-title">Austin Modern Home</h3>
-              <p className="gallery-desc">115" P1.5 Patio Entertainment</p>
+              <p className="gallery-desc">115" P3.9 Patio Entertainment</p>
             </div>
           </div>
         </div>
@@ -296,6 +297,10 @@ function App() {
         <div className="specs-container">
           <h2 className="specs-title">Technical Specifications</h2>
           <div className="specs-grid">
+            <div className="spec-item">
+              <div className="spec-value">P2.6 - P3.9</div>
+              <div className="spec-label">Pixel Pitch Range</div>
+            </div>
             <div className="spec-item">
               <div className="spec-value">115" - 248"</div>
               <div className="spec-label">Screen Size Range</div>
@@ -309,10 +314,6 @@ function App() {
               <div className="spec-label">Weather Protection</div>
             </div>
             <div className="spec-item">
-              <div className="spec-value">-20°/+50°C</div>
-              <div className="spec-label">Operating Temperature</div>
-            </div>
-            <div className="spec-item">
               <div className="spec-value">160°</div>
               <div className="spec-label">Viewing Angle</div>
             </div>
@@ -322,29 +323,25 @@ function App() {
             </div>
           </div>
 
-          {/* Size Guide */}
+          {/* Pitch Guide */}
           <div className="pitch-guide">
-            <h3 className="pitch-guide-title">Residential Screen Size Guide</h3>
+            <h3 className="pitch-guide-title">Pixel Pitch Selection Guide</h3>
             <div className="pitch-guide-grid">
               <div className="pitch-guide-item">
-                <div className="pitch-guide-value">115"</div>
-                <div className="pitch-guide-desc">Compact spaces<br />8-12 ft viewing</div>
+                <div className="pitch-guide-value">P2.6</div>
+                <div className="pitch-guide-desc">Premium clarity<br />10-15 ft viewing</div>
               </div>
               <div className="pitch-guide-item">
-                <div className="pitch-guide-value">150"</div>
-                <div className="pitch-guide-desc">Garden & terrace<br />10-15 ft viewing</div>
+                <div className="pitch-guide-value">P2.9</div>
+                <div className="pitch-guide-desc">Optimal balance<br />12-18 ft viewing</div>
               </div>
               <div className="pitch-guide-item">
-                <div className="pitch-guide-value">190"</div>
-                <div className="pitch-guide-desc">Pool & patio<br />12-18 ft viewing</div>
+                <div className="pitch-guide-value">P3.1</div>
+                <div className="pitch-guide-desc">Garden displays<br />15-20 ft viewing</div>
               </div>
               <div className="pitch-guide-item">
-                <div className="pitch-guide-value">220"</div>
-                <div className="pitch-guide-desc">Large backyard<br />15-22 ft viewing</div>
-              </div>
-              <div className="pitch-guide-item">
-                <div className="pitch-guide-value">248"</div>
-                <div className="pitch-guide-desc">Estate cinema<br />18-25 ft viewing</div>
+                <div className="pitch-guide-value">P3.9</div>
+                <div className="pitch-guide-desc">Large areas<br />18-25 ft viewing</div>
               </div>
             </div>
           </div>
@@ -380,11 +377,11 @@ function App() {
             <div className="footer-column">
               <h4>Technology</h4>
               <ul>
-                <li><a href="#">Fine Pixel Pitch</a></li>
-                <li><a href="#">Weatherproofing</a></li>
-                <li><a href="#">Auto Brightness</a></li>
+                <li><a href="#">P2.6 - P3.9 Pixel Pitch</a></li>
+                <li><a href="#">IP65 Weatherproofing</a></li>
+                <li><a href="#">Auto Brightness Control</a></li>
                 <li><a href="#">Smart Home Integration</a></li>
-                <li><a href="#">4K/8K Content</a></li>
+                <li><a href="#">4K Content Support</a></li>
               </ul>
             </div>
             <div className="footer-column">
