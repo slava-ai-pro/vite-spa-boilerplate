@@ -172,11 +172,20 @@ function App() {
         <div className="gallery-grid">
           {/* Row 1 */}
           <div className="gallery-item gallery-item--featured">
-            <img
-              src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=1200&h=800&fit=crop&q=80"
-              alt="Outdoor cinema by the pool"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=800&fit=crop&q=80"
+                alt="Luxury poolside with outdoor LED display"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--large">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Poolside Cinema</span>
               <h3 className="gallery-title">Beverly Hills Estate</h3>
@@ -185,11 +194,20 @@ function App() {
           </div>
 
           <div className="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&q=80"
-              alt="Luxury outdoor theater"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&q=80"
+                alt="Modern patio with LED screen"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--medium">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Outdoor Theater</span>
               <h3 className="gallery-title">Miami Beach Villa</h3>
@@ -198,11 +216,20 @@ function App() {
           </div>
 
           <div className="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=600&fit=crop&q=80"
-              alt="Cinema screen setup"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80"
+                alt="Garden area with outdoor display"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--medium">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Home Cinema</span>
               <h3 className="gallery-title">Hamptons Residence</h3>
@@ -212,11 +239,20 @@ function App() {
 
           {/* Row 2 */}
           <div className="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=600&fit=crop&q=80"
-              alt="Large display screen"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop&q=80"
+                alt="Rooftop terrace with LED display"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--medium">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Terrace</span>
               <h3 className="gallery-title">Malibu Oceanfront</h3>
@@ -225,11 +261,20 @@ function App() {
           </div>
 
           <div className="gallery-item gallery-item--featured">
-            <img
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=800&fit=crop&q=80"
-              alt="Professional display installation"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&h=800&fit=crop&q=80"
+                alt="Outdoor living space with premium display"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--large">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Outdoor Living</span>
               <h3 className="gallery-title">Scottsdale Ranch</h3>
@@ -238,11 +283,20 @@ function App() {
           </div>
 
           <div className="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=600&fit=crop&q=80"
-              alt="Movie screen outdoors"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&h=600&fit=crop&q=80"
+                alt="Pool cabana with display screen"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--small">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Pool House</span>
               <h3 className="gallery-title">Palm Beach Estate</h3>
@@ -252,11 +306,20 @@ function App() {
 
           {/* Row 3 */}
           <div className="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=800&h=600&fit=crop&q=80"
-              alt="Outdoor entertainment display"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop&q=80"
+                alt="Pergola entertainment area"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--small">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Pergola</span>
               <h3 className="gallery-title">Napa Valley Vineyard</h3>
@@ -265,11 +328,20 @@ function App() {
           </div>
 
           <div className="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop&q=80"
-              alt="Premium outdoor screen"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&h=600&fit=crop&q=80"
+                alt="Mountain home outdoor theater"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--medium">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Backyard</span>
               <h3 className="gallery-title">Aspen Mountain Home</h3>
@@ -278,11 +350,20 @@ function App() {
           </div>
 
           <div className="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=800&h=600&fit=crop&q=80"
-              alt="Compact LED display"
-              className="gallery-image"
-            />
+            <div className="gallery-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop&q=80"
+                alt="Compact patio display setup"
+                className="gallery-image"
+              />
+              <div className="gallery-screen gallery-screen--small">
+                <div className="screen-frame">
+                  <div className="screen-content">
+                    <div className="screen-glow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="gallery-info">
               <span className="gallery-tag">Compact</span>
               <h3 className="gallery-title">Austin Modern Home</h3>

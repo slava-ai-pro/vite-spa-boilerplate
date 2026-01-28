@@ -530,6 +530,14 @@ section[id] {
   aspect-ratio: auto;
 }
 
+/* Gallery Image Container */
+.gallery-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Gallery Image Styles */
 .gallery-image {
   width: 100%;
@@ -540,6 +548,149 @@ section[id] {
 
 .gallery-item:hover .gallery-image {
   transform: scale(1.08);
+}
+
+/* ========================================
+   GALLERY SCREEN OVERLAY - LED Display
+======================================== */
+.gallery-screen {
+  position: absolute;
+  z-index: 2;
+  transition: all var(--transition-elegant);
+}
+
+.gallery-screen--large {
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+}
+
+.gallery-screen--medium {
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48%;
+}
+
+.gallery-screen--small {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 42%;
+}
+
+.screen-frame {
+  aspect-ratio: 16/9;
+  background: linear-gradient(145deg, #1a1a1a 0%, #0a0a0a 100%);
+  border-radius: 6px;
+  padding: 3px;
+  box-shadow:
+    0 20px 60px -10px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.screen-frame::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  border-radius: 2px;
+}
+
+.screen-content {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0c1829 0%, #1a3a5c 30%, #0f2847 60%, #0a1929 100%);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(10, 132, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(64, 156, 255, 0.2) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+  animation: screenPulse 4s ease-in-out infinite;
+}
+
+.screen-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 8px 8px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.screen-glow {
+  position: absolute;
+  bottom: -30%;
+  left: 10%;
+  right: 10%;
+  height: 60%;
+  background: radial-gradient(ellipse at center, rgba(10, 132, 255, 0.4) 0%, transparent 70%);
+  filter: blur(20px);
+  opacity: 0.6;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes screenPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Screen hover effects */
+.gallery-item:hover .screen-frame {
+  box-shadow:
+    0 30px 80px -10px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 0 40px rgba(10, 132, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.gallery-item:hover .screen-glow {
+  opacity: 0.9;
+  filter: blur(25px);
+}
+
+/* Featured items have larger screens */
+.gallery-item--featured .gallery-screen--large {
+  width: 50%;
+  top: 12%;
 }
 
 /* Gallery Info Overlay */
@@ -704,6 +855,18 @@ section[id] {
 
   .gallery-item--featured .gallery-title {
     font-size: 22px;
+  }
+
+  /* Gallery screens responsive */
+  .gallery-screen--large,
+  .gallery-screen--medium,
+  .gallery-screen--small {
+    width: 60%;
+    top: 15%;
+  }
+
+  .gallery-item--featured .gallery-screen--large {
+    width: 55%;
   }
 
   .pitch-guide {
